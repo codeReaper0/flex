@@ -1,61 +1,60 @@
 body {
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
 }
-a {
-    text-decoration: none;
-}
-header span {
-    font-size: 50px;
-    margin: 0;
-    color: black;
-    font-weight: 600;
-}
 header {
-    padding: 16px;
     background-color: #ddd;
+    height: 100px;
 }
 main {
     display: flex;
+    flex: 1;
+    height: 80%;
+}
+.aside1 {
+    background-color: rgb(163, 56, 56);
+    flex-grow: 2;
+    height: 70vh;
+    order: 1;
 }
 .smain {
     display: flex;
     flex-direction: column;
     flex-grow: 5;
     width: auto;
+    height: 70vh;
+    order: 2;
 }
 .div1 {
     display: flex;
-    flex: auto;
-}
-.aside1 {
-    padding-left: 30px;
-    flex-grow: 1;
-}
-.aside2 {
-    flex-grow: 1;
-}
-.aside1 a {
-    display: block;
-    color: black;
-    font-size: 20px;
-    line-height: 48px;
-    font-weight: 500;
+    flex-direction: row;
+    height: 40vh;
+    flex: 1;
 }
 .m1 {
-    background-color: coral;
+    background-color: rgb(150, 73, 45);
+    height: 40vh;
+    width: 50%;
 }
 .m2 {
-    background-color: cadetblue;
+    background-color: rgb(8, 35, 36);
+    height: 40vh;
+    width: 50%;
 }
 .div2 {
     background-color: burlywood;
+    height: 40vh;
+}
+.aside2 {
+    flex-grow: 2;
+    height: 70vh;
+    order: 3;
+    background-color: rgb(0, 0, 0);
 }
 footer {
     background-color: rgb(99, 71, 71);
-    text-align: center;
+    height: 100px;
 }
